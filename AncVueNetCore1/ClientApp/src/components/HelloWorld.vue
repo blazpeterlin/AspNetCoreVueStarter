@@ -45,7 +45,7 @@ export default defineComponent({
   methods: {
     abc() {
       console.log('a');
-      this.bcd();
+      // this.bcd();
     },
     cef() {
 
