@@ -16,6 +16,18 @@
         "name": "Launch Chrome",
         "url": "http://localhost:5000",
         "webRoot": "${workspaceFolder}/ClientApp/src",
+        "pathMapping": {
+          "/_karma_webpack_": "${workspaceFolder}/ClientApp/src"
+        },
+        "sourceMapPathOverrides": {
+            "webpack:/*": "${webRoot}/ClientApp/src*",
+            "/./*": "${webRoot}/ClientApp/*",
+            "/src/*": "${webRoot}/ClientApp/src/*",
+            "/*": "*",
+            "/./~/*": "${webRoot}/ClientApp/node_modules/*"
+        },
+        "breakOnLoad": true,
+        // "preLaunchTask": ".NET Core Launch (console)",
         "sourceMaps": true,
       },
       {

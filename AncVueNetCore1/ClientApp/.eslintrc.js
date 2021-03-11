@@ -18,6 +18,7 @@ module.exports = {
     "space-before-function-paren": "off",
     "prefer-const": "off",
     "semi": "off",
-    "@typescript-eslint/no-empty-function": "off"
+    "@typescript-eslint/no-empty-function": "off",
+    "quotes": "off",
   }
 }

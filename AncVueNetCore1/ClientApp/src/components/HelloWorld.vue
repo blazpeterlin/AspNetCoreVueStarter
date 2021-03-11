@@ -44,7 +44,9 @@ export default defineComponent({
   },
   methods: {
     abc() {
-      console.log('a');
+      let x = "a"
+      x += "b"
+      console.log(x);
       // this.bcd();
     },
     cef() {

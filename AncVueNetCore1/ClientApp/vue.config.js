@@ -6,7 +6,7 @@ module.exports = {
     // consider ClientApp the project root, rather than its parent folder
     output: {
       devtoolModuleFilenameTemplate: info => {
-        const resourcePath = info.resourcePath.replace('./src', './ClientApp/src')
+        const resourcePath = info.resourcePath.replace('./src/', './ClientApp/src/')
         return `webpack:///${resourcePath}?${info.loaders}`
       }
     }
